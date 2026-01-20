@@ -1,0 +1,30 @@
+# Gradle
+.gradle/
+build/
+out/
+classes/
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.classpath
+.project
+.settings/
+bin/
+
+# Minecraft
+run/
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+*~
+
+# Misc
+*.jar
+!gradle/wrapper/gradle-wrapper.jar

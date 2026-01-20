@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "withered_foxy_jumpscare",
+  "version": "${version}",
+  "name": "Withered Foxy Jumpscare",
+  "description": "A Fabric mod that implements a Withered Foxy jumpscare mechanic with random triggers",
+  "authors": [
+    "BordasDaniel"
+  ],
+  "contact": {
+    "homepage": "https://github.com/BordasDaniel/withered-foxy-jumpscare-mod",
+    "sources": "https://github.com/BordasDaniel/withered-foxy-jumpscare-mod"
+  },
+  "license": "MIT",
+  "icon": "assets/withered_foxy_jumpscare/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.bordas.withered_foxy_jumpscare.WitheredFoxyJumpscare"
+    ],
+    "client": [
+      "com.bordas.withered_foxy_jumpscare.WitheredFoxyJumpscareClient"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": ">=0.105.0+1.21.1"
+  },
+  "suggests": {}
+}
