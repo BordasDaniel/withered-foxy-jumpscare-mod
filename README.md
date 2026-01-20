@@ -1,5 +1,7 @@
 # Withered Foxy Jumpscare Mod
 
+> **⚠️ FIGYELEM**: A repository ZIP fájlját **NEM lehet** átnevezni JAR-ra! [Kattints ide a JAR elkészítési útmutatóért](JAR_TELEPITES.md)
+
 Egy Minecraft 1.21.1 Fabric mod, amely véletlenszerű Withered Foxy jumpscare mechanikát valósít meg.
 
 ## Funkciók
@@ -9,13 +11,31 @@ Egy Minecraft 1.21.1 Fabric mod, amely véletlenszerű Withered Foxy jumpscare m
 - **Hangeffekt**: OGG hangfájl lejátszása a jumpscare során
 - **Automatikus bezárás**: 4 másodperc után automatikusan bezáródik (vagy ESC billentyűvel manuálisan)
 
+## ⚠️ FONTOS - Hogyan Szerezd Meg a JAR Fájlt
+
+**NE nevezd át a repository ZIP fájlt JAR-ra!** Ez nem fog működni és "zip END header not found" hibát fogsz kapni.
+
+### Két lehetőséged van:
+
+**A) Építsd meg magad (Ajánlott)** - [Részletes útmutató](JAR_TELEPITES.md)
+1. Töltsd le a repository-t
+2. Cseréld le a placeholder fájlokat (GIF és OGG)
+3. Futtasd: `gradlew.bat build` (Windows) vagy `./gradlew build` (Linux/Mac)
+4. A JAR itt lesz: `build/libs/withered-foxy-jumpscare-1.0.0.jar`
+
+**B) GitHub Actions (Automatikus)**
+1. Fork-old a repo-t
+2. Cseréld le a placeholdereket
+3. Actions → "Build Fabric Mod" → "Run workflow"
+4. Töltsd le a JAR-t az Artifacts-ból
+
 ## Telepítés
 
 1. Telepítsd a [Fabric Loader](https://fabricmc.net/use/installer/)-t Minecraft 1.21.1-hez
 2. Telepítsd a [Fabric API](https://modrinth.com/mod/fabric-api)-t
-3. Töltsd le a mod JAR fájlját
+3. **Építsd meg a JAR fájlt** (lásd fentebb) - NE nevezd át a ZIP-et!
 4. Helyezd a JAR fájlt a `.minecraft/mods` mappába
-5. **FONTOS**: Cseréld le a placeholder fájlokat a saját jumpscare asseteiddel (lásd lentebb)
+5. Élvezd a jumpscare-t!
 
 ## Saját Jumpscare Beállítása
 
