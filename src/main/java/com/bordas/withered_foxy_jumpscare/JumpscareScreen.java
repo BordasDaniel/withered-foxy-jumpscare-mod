@@ -46,8 +46,8 @@ public class JumpscareScreen extends Screen {
         // Render jumpscare texture fullscreen
         try {
             context.drawTexture(JUMPSCARE_TEXTURE, 0, 0, 0, 0, this.width, this.height, this.width, this.height);
-        } catch (Exception e) {
-            // If texture fails to load, just show black screen
+        } catch (RuntimeException e) {
+            // If texture fails to load (FileNotFoundException wrapped in RuntimeException), just show black screen
             WitheredFoxyJumpscare.LOGGER.warn("Failed to render jumpscare texture: " + e.getMessage());
         }
         

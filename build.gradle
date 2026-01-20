@@ -7,6 +7,8 @@ buildscript {
         mavenCentral()
     }
     dependencies {
+        // Note: 1.6-SNAPSHOT is required for Minecraft 1.21.1 support
+        // Stable versions may not yet support this Minecraft version
         classpath 'net.fabricmc:fabric-loom:1.6-SNAPSHOT'
     }
 }

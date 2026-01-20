@@ -7,7 +7,7 @@ import net.minecraft.client.MinecraftClient;
 import java.util.Random;
 
 public class WitheredFoxyJumpscareClient implements ClientModInitializer {
-    private static final Random RANDOM = new Random();
+    private static final Random RANDOM = new Random(System.currentTimeMillis());
     private static final int JUMPSCARE_CHANCE = 1000; // 1 in 1000 chance
     private static int tickCounter = 0;
     private static final int CHECK_INTERVAL = 20; // Check every second (20 ticks)
